@@ -104,8 +104,8 @@ ax.grid(True, alpha=0.2, linestyle='--', linewidth=0.5)
 
 t = 0
 dt = 0.001
-frames = 300
-pause_frames = 30 #pause before restarting
+frames = 300 #change duration of simulation
+pause_frames = 30 #length of pause before restarting loop
 
 
 def init():
@@ -134,3 +134,4 @@ anim = FuncAnimation(fig, animate, init_func=init, frames=frames + pause_frames,
 
 plt.tight_layout()
 plt.show()
+
